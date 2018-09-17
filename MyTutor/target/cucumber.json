@@ -1,0 +1,822 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "User should able to see My Tutor sign up page and verify links and text",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3253250020,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Home page is opened in a browser",
+            "match": {
+              "location": "MyTutorSignUpStepDefs.home_page_is_opened_in_a_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 70055967,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify header title and sign up column",
+            "match": {
+              "location": "MyTutorSignUpStepDefs.verify_header_title_and_sign_up_column()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1347228883,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Verify user should see the error message when entering invalid details",
+        "description": "",
+        "id": "i-can-signup-to-mytutor-website;verify-user-should-see-the-error-message-when-entering-invalid-details;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 89290053,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 129792040,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enter the \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 16
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.user_enter_the(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 202934241,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enter \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 12
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.user_enter(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 145828103,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Enter the invalid \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 19
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.enter_the_invalid(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 173921248,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Enter password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 16
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.enter_password(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 125931174,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Enter telephone number \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 24
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.enter_telephone_number(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5105270944,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click on Find Tutors",
+            "match": {
+              "location": "MyTutorSignUpStepDefs.click_on_Find_Tutors()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 167802899,
+              "error_message": "org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified\n  (Session info: chrome\u003d69.0.3497.92)\n  (Driver info: chromedriver\u003d2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8),platform\u003dMac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027YASHPALs-MBP\u0027, ip: \u0027fe80:0:0:0:18e1:c31d:ddc4:88a7%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dMAC, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dMAC, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8), userDataDir\u003d/var/folders/hb/h8t44fzn76z4d9s65ttskgt00000gn/T/.org.chromium.Chromium.jYVb42}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d69.0.3497.92, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 60147489117574e4fb4ef718d810e70c\n*** Element info: {Using\u003dcss selector, value\u003d#parentsignupform:messagecontainer.error.errors}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:510)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\n\tat com.MyTutor.Pages.MyTutorPage.verifyErrorMessage(MyTutorPage.java:139)\n\tat com.MyTutor.StepDefs.MyTutorSignUpStepDefs.verify_the_error_messages(MyTutorSignUpStepDefs.java:59)\n\tat ✽.Then Verify the error messages(src/test/java/resources/featureFiles/MyTutorTest.feature:19)\n",
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "Verify the error messages",
+            "match": {
+              "location": "MyTutorSignUpStepDefs.verify_the_error_messages()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@myTutorTest"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User should able to see My Tutor sign up page and verify links and text",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4725945080,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Home page is opened in a browser",
+            "match": {
+              "location": "MyTutorSignUpStepDefs.home_page_is_opened_in_a_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 61570087,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify header title and sign up column",
+            "match": {
+              "location": "MyTutorSignUpStepDefs.verify_header_title_and_sign_up_column()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 698915470,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Verify user should see the error message when entering invalid details",
+        "description": "",
+        "id": "i-can-signup-to-mytutor-website;verify-user-should-see-the-error-message-when-entering-invalid-details;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 84731364,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 175063584,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enter the \"Swati\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Swati",
+                  "offset": 16
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.user_enter_the(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 152470656,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enter \"Dewangan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dewangan",
+                  "offset": 12
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.user_enter(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 172862067,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Enter the invalid \"swati.dewangan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "swati.dewangan",
+                  "offset": 19
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.enter_the_invalid(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 200233015,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Enter password \"Test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test",
+                  "offset": 16
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.enter_password(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 181235629,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Enter telephone number \"09898\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "09898",
+                  "offset": 24
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.enter_telephone_number(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 109115656,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click on Find Tutors",
+            "match": {
+              "location": "MyTutorSignUpStepDefs.click_on_Find_Tutors()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 147606810,
+              "error_message": "org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified\n  (Session info: chrome\u003d69.0.3497.92)\n  (Driver info: chromedriver\u003d2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8),platform\u003dMac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027YASHPALs-MBP\u0027, ip: \u0027fe80:0:0:0:18e1:c31d:ddc4:88a7%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dMAC, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dMAC, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8), userDataDir\u003d/var/folders/hb/h8t44fzn76z4d9s65ttskgt00000gn/T/.org.chromium.Chromium.HJtf7r}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d69.0.3497.92, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 9772401dce1cb7464c5da4376b866181\n*** Element info: {Using\u003dcss selector, value\u003d#parentsignupform:messagecontainer.error.errors}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:510)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\n\tat com.MyTutor.Pages.MyTutorPage.verifyErrorMessage(MyTutorPage.java:139)\n\tat com.MyTutor.StepDefs.MyTutorSignUpStepDefs.verify_the_error_messages(MyTutorSignUpStepDefs.java:59)\n\tat ✽.Then Verify the error messages(src/test/java/resources/featureFiles/MyTutorTest.feature:19)\n",
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "Verify the error messages",
+            "match": {
+              "location": "MyTutorSignUpStepDefs.verify_the_error_messages()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@myTutorTest"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User should able to see My Tutor sign up page and verify links and text",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5347717389,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Home page is opened in a browser",
+            "match": {
+              "location": "MyTutorSignUpStepDefs.home_page_is_opened_in_a_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 84820977,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify header title and sign up column",
+            "match": {
+              "location": "MyTutorSignUpStepDefs.verify_header_title_and_sign_up_column()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 711638809,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Verify user should see the error message when entering invalid details",
+        "description": "",
+        "id": "i-can-signup-to-mytutor-website;verify-user-should-see-the-error-message-when-entering-invalid-details;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 90959712,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 192542322,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enter the \"Swati\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Swati",
+                  "offset": 16
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.user_enter_the(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 152215886,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enter \"Dewangan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dewangan",
+                  "offset": 12
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.user_enter(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 200127602,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Enter the invalid \"swati.dew\u003eanga+n@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "swati.dew\u003eanga+n@gmail.com",
+                  "offset": 19
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.enter_the_invalid(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 163027968,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Enter password \"Tester\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tester",
+                  "offset": 16
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.enter_password(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 197031064,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Enter telephone number \"0989809823\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0989809823",
+                  "offset": 24
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.enter_telephone_number(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118446937,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click on Find Tutors",
+            "match": {
+              "location": "MyTutorSignUpStepDefs.click_on_Find_Tutors()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143968431,
+              "error_message": "org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified\n  (Session info: chrome\u003d69.0.3497.92)\n  (Driver info: chromedriver\u003d2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8),platform\u003dMac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027YASHPALs-MBP\u0027, ip: \u0027fe80:0:0:0:18e1:c31d:ddc4:88a7%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dMAC, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dMAC, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8), userDataDir\u003d/var/folders/hb/h8t44fzn76z4d9s65ttskgt00000gn/T/.org.chromium.Chromium.D9pMPZ}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d69.0.3497.92, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 1081de7febedf57ab7ced02f749c7162\n*** Element info: {Using\u003dcss selector, value\u003d#parentsignupform:messagecontainer.error.errors}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:510)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\n\tat com.MyTutor.Pages.MyTutorPage.verifyErrorMessage(MyTutorPage.java:139)\n\tat com.MyTutor.StepDefs.MyTutorSignUpStepDefs.verify_the_error_messages(MyTutorSignUpStepDefs.java:59)\n\tat ✽.Then Verify the error messages(src/test/java/resources/featureFiles/MyTutorTest.feature:19)\n",
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "Verify the error messages",
+            "match": {
+              "location": "MyTutorSignUpStepDefs.verify_the_error_messages()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@myTutorTest"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User should able to see My Tutor sign up page and verify links and text",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4875501453,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Home page is opened in a browser",
+            "match": {
+              "location": "MyTutorSignUpStepDefs.home_page_is_opened_in_a_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 58654095,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify header title and sign up column",
+            "match": {
+              "location": "MyTutorSignUpStepDefs.verify_header_title_and_sign_up_column()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 833829312,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Verify user should see the error message when entering invalid details",
+        "description": "",
+        "id": "i-can-signup-to-mytutor-website;verify-user-should-see-the-error-message-when-entering-invalid-details;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 83468068,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 168705519,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enter the \"Swati\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Swati",
+                  "offset": 16
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.user_enter_the(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 150200423,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enter \"Dewangan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dewangan",
+                  "offset": 12
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.user_enter(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 187611250,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Enter the invalid \"swati.dewangan@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "swati.dewangan@gmail.com",
+                  "offset": 19
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.enter_the_invalid(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 150205096,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Enter password \"Test123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test123",
+                  "offset": 16
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.enter_password(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 181467589,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Enter telephone number \"098980982335455677567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "098980982335455677567",
+                  "offset": 24
+                }
+              ],
+              "location": "MyTutorSignUpStepDefs.enter_telephone_number(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 116334799,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click on Find Tutors",
+            "match": {
+              "location": "MyTutorSignUpStepDefs.click_on_Find_Tutors()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 169164240,
+              "error_message": "org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified\n  (Session info: chrome\u003d69.0.3497.92)\n  (Driver info: chromedriver\u003d2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8),platform\u003dMac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027YASHPALs-MBP\u0027, ip: \u0027fe80:0:0:0:18e1:c31d:ddc4:88a7%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dMAC, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dMAC, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8), userDataDir\u003d/var/folders/hb/h8t44fzn76z4d9s65ttskgt00000gn/T/.org.chromium.Chromium.LVI30c}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d69.0.3497.92, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: f7ff6c6fd5e498a3d84984dfbbd215b9\n*** Element info: {Using\u003dcss selector, value\u003d#parentsignupform:messagecontainer.error.errors}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:510)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\n\tat com.MyTutor.Pages.MyTutorPage.verifyErrorMessage(MyTutorPage.java:139)\n\tat com.MyTutor.StepDefs.MyTutorSignUpStepDefs.verify_the_error_messages(MyTutorSignUpStepDefs.java:59)\n\tat ✽.Then Verify the error messages(src/test/java/resources/featureFiles/MyTutorTest.feature:19)\n",
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "Verify the error messages",
+            "match": {
+              "location": "MyTutorSignUpStepDefs.verify_the_error_messages()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@myTutorTest"
+          }
+        ]
+      }
+    ],
+    "name": "I can signup to MyTutor website",
+    "description": "       as a Parent\n       so that I can choose teacher\n       and able to sent message to the tutor",
+    "id": "i-can-signup-to-mytutor-website",
+    "keyword": "Feature",
+    "uri": "src/test/java/resources/featureFiles/MyTutorTest.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@myTutorTest"
+      }
+    ]
+  }
+]
